@@ -19,6 +19,11 @@
       "name": "logout-endpoint",
       "type": "java.lang.String",
       "description": "Endpoint to be used to logout user in KeyCloak."
+    },
+    {
+      "name": "introspection-endpoint",
+      "type": "java.lang.String",
+      "description": "Endpoint to introspect a provided token in KeyCloak."
     }
   ]
 }
