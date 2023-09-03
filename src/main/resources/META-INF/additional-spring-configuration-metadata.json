@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "client-id",
+      "type": "java.lang.String",
+      "description": "ID of the client registered in KeyCloak."
+    },
+    {
+      "name": "token-endpoint",
+      "type": "java.lang.String",
+      "description": "Endpoint to be used to receive tokens from KeyCloak."
+    },
+    {
+      "name": "client-secret",
+      "type": "java.lang.String",
+      "description": "Secret of the client registered in KeyCloak."
+    }
+  ]
+}

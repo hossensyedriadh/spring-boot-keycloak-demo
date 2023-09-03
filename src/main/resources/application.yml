@@ -1,0 +1,16 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9000/realms/test
+          jwk-set-uri: http://localhost:9000/realms/test/protocol/openid-connect/certs
+server:
+  servlet:
+    context-path: /api
+  shutdown: graceful
+
+# KeyCloak Client properties
+client-id: test-client
+token-endpoint: http://localhost:9000/realms/test/protocol/openid-connect/token
+client-secret: 35mhgmhondvmgVsivun8WuwoPsZzbxR3
