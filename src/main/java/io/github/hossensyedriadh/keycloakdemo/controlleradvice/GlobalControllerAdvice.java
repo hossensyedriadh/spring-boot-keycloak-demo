@@ -1,6 +1,5 @@
 package io.github.hossensyedriadh.keycloakdemo.controlleradvice;
 
-import io.github.hossensyedriadh.keycloakdemo.controller.AuthenticationController;
 import io.github.hossensyedriadh.keycloakdemo.exception.GenericErrorResponse;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,12 +9,12 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.client.HttpClientErrorException;
 
-@RestControllerAdvice(basePackageClasses = {AuthenticationController.class})
-public class AuthenticationControllerAdvice {
+@RestControllerAdvice(basePackages = {"io.github.hossensyedriadh.keycloakdemo.controller"})
+public class GlobalControllerAdvice {
     private final HttpServletRequest httpServletRequest;
 
     @Autowired
-    public AuthenticationControllerAdvice(HttpServletRequest httpServletRequest) {
+    public GlobalControllerAdvice(HttpServletRequest httpServletRequest) {
         this.httpServletRequest = httpServletRequest;
     }
 

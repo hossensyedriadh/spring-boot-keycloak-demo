@@ -12,5 +12,6 @@ server:
 
 # KeyCloak Client properties
 client-id: test-client
-token-endpoint: http://localhost:9000/realms/test/protocol/openid-connect/token
 client-secret: 35mhgmhondvmgVsivun8WuwoPsZzbxR3
+token-endpoint: http://localhost:9000/realms/test/protocol/openid-connect/token
+logout-endpoint: http://localhost:9000/realms/test/protocol/openid-connect/logout
